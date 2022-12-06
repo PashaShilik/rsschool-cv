@@ -34,3 +34,6 @@
 + University (BNTU)
 + RS-school (ST-0)
 + Skillbox
+
+## Code example
+![Code](https://thecode.media/wp-content/uploads/2019/06/pasted-image-0-4-1024x575.png "My Code")
