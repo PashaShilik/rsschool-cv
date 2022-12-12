@@ -42,7 +42,7 @@ li{/*св-ва для списков*/
     margin: 0 auto;/*выравнивание по центру*/
     width: 720px;/*ширина*/
     height: 1280px;/*высота*/
-    background: url(../CV/img/fon.jpg) center no-repeat;/*фон, по центру, без повтора*/
+    background: url(./img/fon.jpg) center no-repeat;/*фон, по центру, без повтора*/
     margin-top: 50px;/*отступ сверху*/
     margin-bottom: 50px;/*отступ снизу*/
     box-shadow:  0 0 8px 6px rgba(0,0,0,.6);/*тень вокруг блока*/
