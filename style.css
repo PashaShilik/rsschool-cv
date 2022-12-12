@@ -1,1 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;1,700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+body{/*свойства для всего содержимого*/
+    margin: 0;/*убираем внешний отступ*/
+    font-family:  'Roboto', sans-serif;/*указываем шрифты*/
+    font-size: 14px;/*размер шрифта*/
+    line-height: 1.6;/*интевал между буквами*/
+    color: rgb(245, 238, 238);/*цвет текста*/
+    background-color: #e3dede;/*цвет фона*/
+    }
+
+*,
+*:before
+*:after{
+    box-sizing: border-box;/*не учитываются отсупы*/
+    }
+    
+h1, h2, h3, h4, h5, h6 {
+margin: 0;/*убирает отступы у всех заголовков*/
+}
+    
+img{ /*св-ва для картинок*/
+    margin: 0;/*убираем внешние отступы*/
+    }
+
+li{/*св-ва для списков*/
+    padding-bottom: 10px; /*отсуп снизу между эл списка*/
+}
+/*container*/
+.container{/*контейнер для всего содержимого*/
+    width: 100%;/*занимать 100% допустимой ширины*/
+    max-width: 1230px;/*максимальная ширина содержимого*/
+    margin: 0 auto;/*выставляет соджержимое по центру*/
+    padding: 0 15px;/*отступы по сторонам*/
+}
+
+.blok_cv{ /*общий блок со всем содержимым*/
+    position: relative;/*пощиционирование для вставки иконок*/
+    margin: 0 auto;/*выравнивание по центру*/
+    width: 720px;/*ширина*/
+    height: 1280px;/*высота*/
+    background: url(../img/fon.jpg) center no-repeat;/*фон, по центру, без повтора*/
+    margin-top: 50px;/*отступ сверху*/
+    margin-bottom: 50px;/*отступ снизу*/
+    box-shadow:  0 0 8px 6px rgba(0,0,0,.6);/*тень вокруг блока*/
+    border-radius: 10px;/*закругление углов*/
+}
+
+.cv__ico{/*св-ва для иконок*/
+    position: absolute;/*выравниваем слева от фоток*/
+    display: flex;/*делаем флексами*/
+    flex-wrap: wrap;/*разрешаем перенос строки*/
+    width: 50px;/*ширина*/
+    margin: 25px;/*внешний отступ*/
+}
+
+.cv__img{/*св-ва для блока с фото*/
+    display: flex;/*распологаем в ряд*/
+    justify-content: center;/*выравниваем по центру*/
+    padding: 25px 10px;/*внешние отступы*/
+}
+
+.img__me{/*св-ва для фото*/
+    border-radius: 15px;/*скругляем углы*/
+    box-shadow:  0 0 4px 3px rgba(248, 246, 246, 0.6);
+    /*задаем тень*/
+}
+
+.img__me:not(last-child){/*для всех кроме последнего*/
+    margin-left: 15px;/*внешний отсуп с лева*/
+}
+
+.cv__title{/*св-ва для блока заголовка*/
+    text-align: center;/*распологаем по центру*/
+    padding: 5px;/*отступы*/
+}
+
+.title{/*св-ва для заголовка*/
+   font-size: 52px;/*размер шрифта*/
+   font-weight: bold;/*толщина шрифта*/
+   text-transform: uppercase; /*буквы большие*/
+}
+
+.subtitle{/*св-ва для второго заголовка*/
+    font-family: 'Kaushan Script', cursive;/*стиль шрифта*/
+    font-size: 60px;/*расзмер шрифта*/
+    padding: 5px;/*отступы*/
+}
+
+/*about me*/
+
+.about__me{/*св-ва для общего блока*/
+   margin:20px 30px 20px 40px;/*внешние отступы*/
+}
+
+.about__me__title{/*св-ва для заголовка*/
+    font-size: 18px;/*расзмер шрифта*/
+    text-transform: uppercase;/*буквы большие*/
+    font-weight: 500;/*толщина шрифта*/
+    line-height: 1.5;/*отсупы между буквами*/
+}
+
+.about__me__title:after{/*делаем полоске через псевдоэлемент*/
+    content: '';/*обязательно для псевдоэлемента*/
+    display: block;/*делаем его блочным*/
+    width: 50px;/*ширина*/
+    height: 2px;/*высота*/
+    background-color: red;/*цвет фона*/
+}
+
+.about__me__story{/*св-ва для текста*/
+    font-size: 14px;/*размер*/
+    font-weight: 300;/*толщина*/
+}
+
+.about__me__list{/*св-ва для текста списка*/
+    list-style-type: none;/*убираем нумерацию*/
+    padding: 0;/*убираем отступы*/
+}
+
+.list{/*св-ва всех списков*/
+    display: flex;/*делаем их флексамми*/
+    justify-content: space-between;/*одинаковое растояние*/
+    padding-top: 20px;/*отступы*/
+}
+
+.code{/**/
+    padding-top: 25px;/*отступы*/
+}
+
+/*footer*/
+
+.footer__item{
+  margin: 5px;
+}
+
+.footer__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer__list__link{
+    margin-left: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer__list__link:hover{
+    color: coral;
+}
